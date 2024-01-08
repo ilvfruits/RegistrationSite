@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update password
+{% endblock %}
+
+{% block main %}
+    <form action="/change_company_info" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="company_name" name="company_name" placeholder="Company Name" type="text">
+        </div>
+        <div class="mb-3">
+            <label for="logo">Company Logo:</label>
+            <input type="file" name="logo">
+        </div>
+        <button class="btn btn-primary" type="submit">Update</button>
+    </form>
+{% endblock %}

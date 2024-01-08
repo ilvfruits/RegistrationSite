@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>HOME PAGE</h1>
+    {% if session.get("id") %}
+        <div>
+            <h2>Company Information</h2>
+            <p>Company Name: {{ company_name }}</p>
+            <img class='image-logo' src="{{ company_logo }}" alt="Company Logo">
+        </div>            
+    {% endif %}
+{% endblock %}
