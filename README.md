@@ -12,26 +12,26 @@ This Flask web application is a simple example of a web-based user interface for
 - Flash Messages: The app displays flash messages to provide feedback to users.
 
 ## Project Structure
-The project follows a typical Flask web application structure:
-├── app.py # Main application file
-├── static/ # Static files (CSS, JavaScript, images)
-│ └── css/
-│ └── style.css # CSS styles for the application
-├── templates/ # HTML templates
-│ ├── layout.html # Base HTML layout template
-│ ├── home.html # Home page template
-│ ├── login.html # Login page template
-│ ├── register.html # Registration page template
-│ ├── change_company_info.html # Company information update page template
-├── instance/
-│ ├── users.db # SQLite database for user data
+The project follows a typical Flask web application structure:<br>
+├── app.py # Main application file<br>
+├── static/ # Static files (CSS, JavaScript, images)<br>
+│ └── uploads/ #logo images<br>
+│ └── style.css # CSS styles for the application<br>
+├── templates/ # HTML templates<br>
+│ ├── layout.html # Base HTML layout template<br>
+│ ├── home.html # Home page template<br>
+│ ├── login.html # Login page template<br>
+│ ├── register.html # Registration page template<br>
+│ ├── change_company_info.html # Company information update page template<br>
+├── instance/<br>
+│ ├── users.db # SQLite database for user data<br>
 
 ## Requirements
-Python 3.9.18
-Flask 3.0.0
-Flask-SQLAlchemy 3.1.1
-Flask-Migrate 4.0.5
-Werkzeug 3.0.1
+- Python 3.9.18
+- Flask 3.0.0
+- Flask-SQLAlchemy 3.1.1
+- Flask-Migrate 4.0.5
+- Werkzeug 3.0.1
 
 ## Usage
 Run the Flask application: `python app.py`.
